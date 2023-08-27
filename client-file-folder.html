@@ -139,7 +139,7 @@
                 <br>
                 <hr data-n55-theme="primary" data-n55-size="xsmall">
                 <br>
-                
+
                 <p class="h-center">Click the Upload button below to access your secure Interstellar shared folder. You will asked to enter your name.</p>
                 <nav class="h-center">
                     <a id="js-cta__upload" href="http://helloarcanus55.quickconnect.to/sharing/TNuNnKTyd"
@@ -161,11 +161,31 @@
             </section>
         </section>
      </neodigm-carousel>
+<!--    https://play.google.com/store/apps/details?id=com.synology.dsdrive -->  
+     <nav class="h-center"> 
+        <neodigm-acticon  data-n55-theme="ghost" data-n55-size="medium"
+        data-n55-tulip='{"msg":" Generate a QR code ","mrq":false,"tmpt":"","theme":"ghost","size":"small","position":"top","icon":""}'
+        data-n55-poptart-click="js-popover-qr--id"
+        ><neodigm-icon class="material-symbols-outlined">qr_code_2</neodigm-icon></neodigm-acticon>
+     </nav>
     <!--
      <a data-n55-carousel-nav='{"id": "js-carousel-inpup", "nav": "next"}'>next</a>
      <a data-n55-carousel-nav='{"id": "js-carousel-inpup", "nav": "prev"}'>prev</a>
      <a data-n55-carousel-nav='{"id": "js-carousel-inpup", "nav": "loop"}'>loop</a>-->
 </section>
+
+<neodigm-template id="js-popover-qr--id" data-n55-poptart='{"w": 176, "position":"bottom", "arrow": true, "offset":{"x":0,"y":0,"w":0}}'>
+    <nav class="h-right">
+        <neodigm-acticon  data-n55-theme="ghost" data-n55-size="micro"
+        data-n55-tulip='{"msg":" Close QR Code ","mrq":false,"tmpt":"","theme":"ghost","xsize":"small","position":"top","icon":""}'
+        data-n55-wired4sound-click='9'
+        onclick="neodigmTulip.close(); neodigmPopTart.close()"><neodigm-icon class="material-symbols-outlined">close</neodigm-icon></neodigm-acticon>
+    </nav>
+    <div class="h-center">
+        <img src="./images/Gennflex-QRcode.png" alt="QR Code">
+        <br><br>
+    </div>
+</neodigm-template>
 
                         <div class="">
                           <table class="table data-table border-0" style="margin-top: 0px;">
